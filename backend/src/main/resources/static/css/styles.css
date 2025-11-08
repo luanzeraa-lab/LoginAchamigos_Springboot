@@ -1,0 +1,82 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7e8d7; /* Um tom suave de creme/pêssego */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background: white;
+    padding: 35px;
+    border-radius: 12px; /* Cantos um pouco mais arredondados */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada */
+    width: 320px; /* Um pouco mais largo */
+    text-align: center;
+}
+
+h1 {
+    color: #FF8C00; /* Laranja escuro para o título (DarkOrange) */
+    margin-bottom: 25px;
+    font-size: 28px; /* Título um pouco maior */
+    font-weight: 600; /* Mais encorpado */
+}
+
+div {
+    margin-bottom: 18px; /* Mais espaço entre os campos */
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #555; /* Cor de texto mais suave */
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 93%; /* Ajustado para preencher melhor com padding */
+    padding: 12px;
+    border: 1px solid #ddd; /* Borda mais suave */
+    border-radius: 6px; /* Cantos arredondados nos inputs */
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #FF8C00; /* Borda laranja ao focar */
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 140, 0, 0.5); /* Sombra suave ao focar */
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #FF8C00; /* Laranja escuro para o botão */
+    color: white;
+    border: none;
+    border-radius: 6px; /* Cantos arredondados no botão */
+    cursor: pointer;
+    font-size: 18px; /* Texto do botão maior */
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Transição suave */
+    margin-top: 10px; /* Margem acima do botão */
+}
+
+button:hover {
+    background-color: #E67E00; /* Laranja um pouco mais escuro no hover */
+}
+
+.error-message {
+    color: #dc3545; /* Vermelho para erros */
+    border: 1px solid #dc3545;
+    background-color: #f8d7da;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}

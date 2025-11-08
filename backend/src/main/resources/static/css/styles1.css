@@ -1,0 +1,104 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7e8d7; /* Fundo bege suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background-color: #fff; /* Quadro branco */
+    padding: 40px 50px;
+    border-radius: 12px; /* Bordas arredondadas */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra suave */
+    width: 420px;
+    max-height: 90vh;
+    overflow-y: auto; /* Caso o formulário fique muito grande */
+    text-align: center;
+}
+
+h1 {
+    color: #FF8C00; /* Laranja escuro */
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+h2 {
+    color: #FF8C00;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #FF8C00;
+    outline: none;
+    box-shadow: 0 0 4px rgba(255, 140, 0, 0.4);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #FF8C00;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #e67e00;
+}
+
+.error-message {
+    color: #dc3545;
+    border: 1px solid #dc3545;
+    background-color: #f8d7da;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* Barra de rolagem estilizada (opcional) */
+.form-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.form-container::-webkit-scrollbar-thumb {
+    background-color: #FF8C00;
+    border-radius: 10px;
+}
