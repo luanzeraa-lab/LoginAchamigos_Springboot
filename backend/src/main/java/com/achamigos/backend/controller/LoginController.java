@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/login")
 @CrossOrigin(
-    origins = "*", // Você pode trocar para o domínio do front cloud se quiser restringir
+    origins = "https://achamigos-full-stack-p6dr.onrender.com",
     allowedHeaders = "*",
     methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.OPTIONS}
 )
