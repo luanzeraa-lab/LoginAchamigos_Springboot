@@ -5,7 +5,7 @@ import com.achamigos.backend.model.User;
 public class ApiResponse {
     private String status;
     private String message;
-    private User user; // 🔹
+    private User user;
 
 
     public ApiResponse() {}
