@@ -9,8 +9,11 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/login")
-//@CrossOrigin(origins = {"http://localhost:3000", "https://achamigos.vercel.app"})
-@CrossOrigin(origins = "*")
+@CrossOrigin(
+    origins = "*", // Você pode trocar para o domínio do front cloud se quiser restringir
+    allowedHeaders = "*",
+    methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.OPTIONS}
+)
 public class LoginController {
 
     @Autowired
@@ -18,7 +21,6 @@ public class LoginController {
 
     @Autowired
     private PasswordEncoder passwordEncoder;
-
 
     @PostMapping
     public ApiResponse login(@RequestBody LoginRequest request) {
@@ -32,6 +34,11 @@ public class LoginController {
         }
     }
 
+    // Opcional: GET para teste se a rota está ativa
+    @GetMapping
+    public String teste() {
+        return "API login ativa";
+    }
 
     public static class LoginRequest {
         private String email;
