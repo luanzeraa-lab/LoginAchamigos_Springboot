@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/login")
 @CrossOrigin(
     origins = {
-        "http://localhost:3002",
+        "http://localhost:3000",
         "https://achamigos-full-stack-p6dr.onrender.com"
     },
     allowedHeaders = "*",
