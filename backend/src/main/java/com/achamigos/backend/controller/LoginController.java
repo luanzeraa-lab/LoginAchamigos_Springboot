@@ -10,7 +10,10 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/login")
 @CrossOrigin(
-    origins = "https://achamigos-full-stack-p6dr.onrender.com",
+    origins = {
+        "http://localhost:3002",
+        "https://achamigos-full-stack-p6dr.onrender.com"
+    },
     allowedHeaders = "*",
     methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.OPTIONS}
 )
