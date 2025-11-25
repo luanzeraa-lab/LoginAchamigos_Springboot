@@ -9,7 +9,8 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/login")
-@CrossOrigin(origins = {"http://localhost:3000", "https://achamigos.vercel.app"})
+//@CrossOrigin(origins = {"http://localhost:3000", "https://achamigos.vercel.app"})
+@CrossOrigin(origins = "*")
 public class LoginController {
 
     @Autowired
